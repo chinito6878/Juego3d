@@ -1,0 +1,42 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego 3D táctil</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+
+        /* joystick */
+        #joystick {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            width: 120px;
+            height: 120px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 50%;
+            touch-action: none;
+        }
+        #stick {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.4);
+            border-radius: 50%;
+            left: 30px;
+            top: 30px;
+            touch-action: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="joystick">
+        <div id="stick"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
